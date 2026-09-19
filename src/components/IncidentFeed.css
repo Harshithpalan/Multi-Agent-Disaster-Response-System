@@ -1,0 +1,63 @@
+.incident-feed {
+  padding: 20px;
+}
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.icon-btn:hover {
+  opacity: 1;
+}
+
+.feed-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feed-item {
+  background: rgba(0,0,0,0.2);
+  padding: 16px;
+  border-radius: var(--radius-md);
+  border-left: 4px solid transparent;
+}
+
+.feed-item.border-critical {
+  border-left-color: var(--accent-red);
+}
+
+.feed-item.border-warning {
+  border-left-color: var(--accent-orange);
+}
+
+.feed-item.border-active {
+  border-left-color: var(--accent-green);
+}
+
+.feed-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.feed-time {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.feed-title {
+  margin: 0 0 4px 0;
+  font-size: 1rem;
+}
+
+.feed-location {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
